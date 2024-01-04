@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">  
+    <title>best todo</title>
+  </head>
+  <body>
+    <div id="container">  
+      <div class="todo">
+        <form id="form">
+          <div class="data-input">
+            <input type="text" id="entertask">
+            <button id="plus">+</button>
+          </div>
+        </form>
+        <div class="selectstatus">
+          <select id = "switchStatus" data-switch-value="active">
+            <option value="active">активные</option>
+            <option value="done">завершенные</option>
+            <option value="deleted">удаленные </option>
+          </select>      
+        </div>
+      </div>
+    <div id="taskList" data-switch-value = "active">
+      <!-- <div class = "tasks">
+        <span>помыть посуду </span><button id = "done">done</button> <button id = "del">del</button>
+      </div>   -->
+    </div>
+    </div>
+    
+    
+    <script src="test.js"></script>
+  </body>
+</html>

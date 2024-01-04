@@ -1,0 +1,93 @@
+#plus {
+    background-color: bisque;
+    border: none;
+    border-radius: 2px;
+}
+#entertask {
+    border: none;
+}
+.todo {
+    margin: 5px;
+    list-style: none;
+    display: inline-flex;
+}
+.data-input{
+    width: 170px;
+    margin-top: 20px;
+    
+    border-color: bisque;
+    border-width: 2px;
+    border-style: double;
+    padding: 3px;
+    border-radius: 3px;
+}
+.selectstatus {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+    
+}
+.tasks{
+    margin: 5px;
+    border: 2px solid bisque;
+    padding: 6px;
+    border-radius: 5px;
+    justify-content: center;
+    
+}
+#del {
+    background-image: url("trash.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: brown;
+    border-radius: 5px;
+    float: right;
+    width: 26px;
+    height: 20px;
+    
+}
+#done {
+    background-image: url("gal.png");
+    background-position: center;
+    background-size: cover;
+    width: 26px;
+    height: 20px;
+    border-radius: 5px;
+    float: right;
+    
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+#removeTask {
+    
+    background-image: url("remove.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 26px;
+    height: 20px;
+    border-radius: 5px;
+    float: right;
+    
+}
+
+[data-switch-value="active"] .tasks:not([data-todo-status="active"]),
+[data-switch-value="done"] .tasks:not([data-todo-status="done"]),
+[data-switch-value="deleted"] .tasks:not([data-todo-status="deleted"])
+{
+    display: none;
+}
+
+[data-todo-status="active"] #removeTask {
+    display: none;
+}
+
+[data-todo-status="done"] #done ,
+[data-todo-status="deleted"] #done {
+    display: none;
+}
+
